@@ -76,3 +76,104 @@
 // }
 // console.log(numThree(num));
 
+// 7
+// let numbers = [1, 2, 3, 4, 5];
+// let transformed = transformArray(numbers);
+// function transformArray(arr) {
+//     return arr.map(num => {
+//         if (num % 2 === 0) {
+//             return num ** 2;
+//         } else {
+//             return num ** 3;
+//         }
+//     });
+// }
+// console.log(transformed);
+
+// 8
+// let fruits = ['gilos', 'o`rik', 'shaftoli', 'olma', 'olcha'];
+// let lastLetter = getLastLetters(fruits);
+// function getLastLetters(arr){
+//     return arr.map(str => str.slice(-1))
+// }
+// console.log(lastLetter)
+
+// 9
+// let words = ['hard', 'pig', 'eat', 'dog'];
+// let lastLetter = getLastLetters(words);
+// function getLastLetters(arr){
+//     return arr.filter(str => str.length < 4);
+// }
+// console.log(lastLetter)
+
+// 10
+// let user = [
+//     {name:'Jhon', age:5},
+//     {name:'Doe', age:30},
+//     {name:'Alex', age:50},
+// ]
+// function userAbout(arr){
+//     return arr.some(person => person.age > 18)
+// }
+// console.log(userAbout(user))
+
+// 11
+// let names = ['Zafarjon', 'Ibrohimjon', 'Murodjon', 'Bekzodjon'];
+// function endWithJon(names) {
+//     return names.every(name => name.endsWith("jon"));
+// }
+// console.log(endWithJon(names))
+
+// 12
+// let numbers = [12, 75, 151, 400, 215, 678, 985];
+// function uchHonaliSonlar(arr) {
+//     return arr.find(num => num >= 100 && num <= 999 && num % 5 === 0);
+// }
+// console.log(uchHonaliSonlar(numbers));
+
+// 13
+// let names = ['Zafarbek', 'Jasurbek', 'Aziz'];
+// function findBek(names){
+//     return names.findIndex(name => name.includes('bek'));
+// }
+// console.log(findBek(names))
+
+// OBJECT METHODIGA OID MASALALAR
+// 1
+// let objKey = {
+//     name: "Zafarbek",
+//     age: 17,
+//     ocuption: "Student"
+// }
+// function objKeys(obj){
+//     return Object.keys(obj)
+// };
+// let keys = objKeys(objKey)
+// console.log(objKey)
+
+// 2
+// let objValue = {
+//     name: "Zafarbek",
+//     age: 17,
+//     ocuption: "Student"
+// }
+// function objValues(obj){
+//     return Object.values(obj)
+// };
+// let value = objValues(objValue)
+// console.log(objValue)
+
+// 4
+// let objValue = {
+//     name: "Zafarbek",
+//     age: 17,
+//     ocuption: "Student"
+// }
+// function freezeObj(obj){
+//     Object.freeze(obj);
+//     return obj;
+// }
+// let frozenObj = freezeObj(objValue);
+// frozenObj.age = 17;
+// frozenObj.newProp = "new";
+// console.log(frozenObj)
